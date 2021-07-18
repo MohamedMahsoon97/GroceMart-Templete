@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,10 +9,6 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
-}
-body
-{
-    background-color: #eee;
 }
 :root {
     --red : #e52029;
@@ -753,24 +750,39 @@ body
     text-align: left;
     top: 50px;
     left: 130px;
+    transition: all 1s ease-in-out;
 }
 .carousel-caption .carousel-title-4
 {
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Indie Flower', cursive;
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 600;
+    animation-name: animation-display;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 .carousel-caption .carousel-title-1
 {
     font-size: 100px;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .carousel-caption .carousel-title-3
 {
     font-size: 36px;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .carousel-caption .button-wrap
 {
     margin-top: 50px;
+    animation-name: animation-btn;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .2s;
+    position: absolute;
 }
 .carousel-caption .button-wrap .button
 {
@@ -787,4 +799,80 @@ body
     text-decoration: none;
     background-color: #b41921;
 }
+
+@keyframes animation{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes animation-display{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animation-btn{
+    0%{
+        opacity: 0;
+        bottom: -120px;
+    }
+    100%{
+        opacity: 1;
+        bottom: -85px;
+    }
+}
 /* --------------------------  end Slider section  -------------------------- */
+
+
+/* --------------------------  Start About section  -------------------------- */
+.about-content
+{
+    margin-top: 150px;
+    margin-left: 90px;
+    width: 100%;
+}
+.about-content .title-style-1
+{
+    letter-spacing: .05em;
+    text-transform: none;
+    color: #7fd02c;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    font-weight: 600;
+}
+.about-content .heading2
+{
+    font-size: 55px;
+    margin: 10px 0px 10px 0px;
+}
+.about-content .text
+{
+    font-size: 16px;
+    font-family: "Lato", -apple-system;
+    font-weight : 400;
+    letter-spacing : 0.75px;
+    line-height : 24px;
+}
+.about-content .group-xl > a
+{
+    background-color: #c01f28;
+    color: #fff;
+    padding: 13px 15px 12px 17px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 30px;
+}
+.about-content .group-xl > a:hover
+{
+    background-color: #a71c23;
+}
+.team-navy-status
+{
+    color: #7fd02c;
+}
+/* --------------------------  End About section  -------------------------- */
