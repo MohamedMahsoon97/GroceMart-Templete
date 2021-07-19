@@ -54,5 +54,17 @@ increment.onclick = function() {
 decrement.onclick = function() {
     counterValue.value = parseInt(counterValue.value) - 1;
 }
-
 //--------  end increment and decrement counter  --------//
+
+
+//-----------  start animation in about section  -----------//
+
+window.onscroll = function() {
+    const aboutContent = document.getElementById("about-content");
+    if(window.pageYOffset >= 350) {
+        aboutContent.classList.add("make-animation")
+        console.log("more than 400px"); 
+    }
+}
+
+//-----------  end animation in about section  ------------//

@@ -703,7 +703,7 @@
     background-color: #eeeeee5d;
     color: #ffffff !important;
     width: 75px;
-    height: 40px;
+    height: 60px;
     border-radius: 0px 20px 20px 0px;
     top: 205px;
 }
@@ -715,8 +715,8 @@
 .carousel-control-next {
     background-color: #eeeeeea6;
     color: #ffffff;
-    width: 75px;
-    height: 40px;
+    width: 70px;
+    height: 60px;
     border-radius: 20px 0px 0px 20px;
     top: 205px;
 }
@@ -727,6 +727,7 @@
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1.5px;
+    line-height: 60px;
 }
 .carousel-prev-icon::after , .carousel-next-icon::after {
     content: "";
@@ -736,7 +737,7 @@
     background-color: #fff;
     color: #fff;
     position: absolute;
-    bottom: 6px;
+    bottom: 13px;
     left: 16px;
     transition: all .3s ease-in-out;
 }
@@ -830,13 +831,17 @@
 
 
 /* --------------------------  Start About section  -------------------------- */
+.about-img img
+{
+    width: 100%;
+}
 .about-content
 {
     margin-top: 150px;
     margin-left: 90px;
     width: 100%;
 }
-.about-content .title-style-1
+.about-content .heading4
 {
     letter-spacing: .05em;
     text-transform: none;
@@ -848,7 +853,7 @@
 .about-content .heading2
 {
     font-size: 55px;
-    margin: 10px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
 }
 .about-content .text
 {
@@ -857,13 +862,20 @@
     font-weight : 400;
     letter-spacing : 0.75px;
     line-height : 24px;
+
 }
-.about-content .group-xl > a
+.about-content .group
+{
+    margin-top: 30px;
+}
+.about-content .group .group-xl > a
 {
     background-color: #c01f28;
     color: #fff;
-    padding: 13px 15px 12px 17px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    line-height: 50px;
     text-align: center;
     margin-right: 30px;
 }
@@ -871,8 +883,83 @@
 {
     background-color: #a71c23;
 }
+.team-navy-name a
+{
+    color: #151515;
+    letter-spacing: 1px;
+}
+.team-navy-name a:hover
+{
+    text-decoration: none;
+}
 .team-navy-status
 {
     color: #7fd02c;
+}
+.make-animation
+{
+    transform: scale(1);
+    animation-name: animi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes animi 
+{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (max-width:991px) {
+    .about-content
+    {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    .about-content .heading4
+    {
+        letter-spacing: .04em;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .about-content .heading2
+    {
+        font-size: 45px;
+        margin: 7px 0px 10px 0px;
+    }
+    .about-content .text
+    {
+        text-align: center;
+        font-size: 16px;
+        font-family: "Lato", -apple-system;
+        font-weight : 400;
+        letter-spacing : 1px;
+        line-height : 24px;
+    }
+    .about-content .group
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-content .group .group-xl
+    {
+        display: flex;
+        margin-right: 20px;
+    }
+    .about-content .group .group-xl > a
+    {
+        margin-right: 10px;
+    }
+    .about-content .group img
+    {
+        width: 100px;
+    }
 }
 /* --------------------------  End About section  -------------------------- */
