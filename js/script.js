@@ -58,13 +58,24 @@ decrement.onclick = function() {
 
 
 //-----------  start animation in about section  -----------//
-
 window.onscroll = function() {
+    const myNavbar = document.getElementById("nav");
     const aboutContent = document.getElementById("about-content");
-    if(window.pageYOffset >= 350) {
-        aboutContent.classList.add("make-animation")
-        console.log("more than 400px"); 
+    const parallexContent = document.getElementById("parallax-content");
+    // if(window.pageYOffset >= 100) {
+    //     myNavbar.classList.add("nav-fixed");
+    // };
+    if(window.pageYOffset >= 380) {
+        aboutContent.classList.add("make-animation-about")
+    };
+    
+    if(window.pageYOffset >= 850) {
+        parallexContent.classList.add("parallax-animation");
     }
-}
 
+}
 //-----------  end animation in about section  ------------//
+
+//-----------  Start animation in parallex section  -----------//
+
+//-----------  End animation in parallex section  -----------//
