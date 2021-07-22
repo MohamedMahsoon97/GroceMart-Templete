@@ -62,15 +62,22 @@ window.onscroll = function() {
     const myNavbar = document.getElementById("nav");
     const aboutContent = document.getElementById("about-content");
     const parallexContent = document.getElementById("parallax-content");
+    const toTopPage = document.getElementById("to-top");
     // if(window.pageYOffset >= 100) {
     //     myNavbar.classList.add("nav-fixed");
     // };
     if(window.pageYOffset >= 380) {
         aboutContent.classList.add("make-animation-about")
     };
-    
     if(window.pageYOffset >= 850) {
         parallexContent.classList.add("parallax-animation");
+    }
+    if(true){
+        if(window.pageYOffset >= 850) {
+            toTopPage.style.opacity = "1"
+        }else{
+            toTopPage.style.opacity = "0"
+        }
     }
 
 }

@@ -20,7 +20,7 @@
     background-color: var(--red);
     color: #ffffff;
 }
-body{height: 3000px;}
+/* body{height: 3000px;} */
 
 /* ----------------------------- Start Navbar section ----------------------------- */
 .navbar
@@ -1438,10 +1438,10 @@ body{height: 3000px;}
     line-height: 50px;
     border-radius: 50%;
     text-decoration: none;
-    transition: all .45s ease, opacity .25s ease-in-out;
+    transition: all .45s ease-in-out, opacity .25s ease-in-out;
     background-color: var(--red);
     /* transform: translate3d(0, 100px, 0); */
-    opacity: .8;
+    opacity: 0;
     z-index: 100;
 }
 .to-top i
