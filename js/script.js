@@ -28,7 +28,7 @@ myBars.addEventListener('click' , function() {
 //-------- end our contact model ---------//
 
 
-//-------- start show/hide navbar collapse ---------//
+//-------- start show/hide navbar collapse  => bars ---------//
 const navbarCollapse = document.getElementById("navbarScroll");
 const navbarToggler = document.querySelector(".navbar-toggler");
 
@@ -40,7 +40,7 @@ navbarToggler.addEventListener('click' , function() {
         navbarToggler.children[2].classList.toggle("rotate2");
     }
 });
-//-------- end show/hide navbar collapse ---------//
+//-------- end show/hide navbar collapse => bars ---------//
 
 
 //--------  start increment and decrement counter  --------//
@@ -59,6 +59,7 @@ decrement.onclick = function() {
 
 //-----------  start animation in about section  -----------//
 window.onscroll = function() {
+    // get elements
     const myNavbar = document.getElementById("nav");
     const myheaderSlider = document.querySelector("div.headerSlider");
     const aboutContent = document.getElementById("about-content");
@@ -69,7 +70,12 @@ window.onscroll = function() {
     const myTestTitle2 = document.getElementById("title-test-2")
     const myProductsCards = document.getElementById("products-card")
     const mySaleImg = document.querySelector("div.sale");
+    const myFaqSlider = document.querySelector(".Common-Questions-slider");
+    const myFaqAsk = document.querySelectorAll(".ask");
+    const faqH4 = document.querySelector(".FAQ-h4");
+    const faqH2 = document.querySelector(".FAQ-h2");
     const toTopPage = document.getElementById("to-top");
+    // Navbar fixed
     if (true) {
         if (window.pageYOffset >= 200) {
             myNavbar.classList.add("nav-fixed");
@@ -79,32 +85,48 @@ window.onscroll = function() {
             myheaderSlider.style.marginTop = "0px"
         }
     }
-    if(window.pageYOffset >= 200) {
-        myNavbar.classList.add("nav-fixed");
-        myheaderSlider.style.marginTop = "100px"
-    };
+    // About Section
     if(window.pageYOffset >= 350) {
         aboutContent.classList.add("make-animation-about")
     };
+    // Parallax
     if(window.pageYOffset >= 850) {
         parallexContent.classList.add("parallax-animation");
     }
+    // product titles
     if(window.pageYOffset >= 1200) {
         myProdTitle1.classList.add("products-animation-1");
         myProdTitle2.classList.add("products-animation-2");
     }
+    // our product cards
     if(window.pageYOffset >= 1400) {
         myProductsCards.style.opacity = "1";
     }
+    // Testemonials
     if(window.pageYOffset >= 2000) {
         myTestTitle1.classList.add("products-animation-1");
         myTestTitle2.classList.add("products-animation-2");
     }
+    // sale
     if(window.pageYOffset >= 2730) {
         mySaleImg.childNodes[1].style.animationName = "sale-img1";
         mySaleImg.childNodes[1].style.opacity = 1;
         mySaleImg.childNodes[3].style.animationName = "sale-img2";
         mySaleImg.childNodes[3].style.opacity = 1;
+    }
+    // Common Questions
+    if(window.pageYOffset >= 3600) {
+        myFaqSlider.style.animationName = "FAQ-slider";
+        myFaqSlider.style.opacity = 1;
+        faqH4.style.animationName = "FAQ-h4";
+        faqH4.style.opacity = 1;
+        faqH2.style.animationName = "FAQ-h2";
+        faqH2.style.opacity = 1;
+
+        myFaqAsk.forEach ( myAsk => {
+            myAsk.style.animationName = "Questions-ask";
+            myAsk.style.opacity = 1;
+        })
     }
     if(true){
         if(window.pageYOffset >= 850) {
@@ -137,7 +159,7 @@ const spanClick = document.querySelectorAll(".ask-icon");
 Questions.forEach ( FAQ => {
     FAQ.addEventListener('click' , () => {
         FAQ.children[1].classList.toggle("active");
-        spanClick.classList.add("span-click");
+        // spanClick.classList.add("span-click");
     })
 })
 //--------- End accordion (Common-Questions-FAQ) ---------//
