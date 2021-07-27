@@ -183,6 +183,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- search box -->
         <div class="search-model" id="search-model">
             <div class="container">
@@ -197,11 +198,7 @@
         <!-- our contacts model -->
         <div class="our-contact" id="our-contact">
             <div class="contact-header">
-                <a href="#" id="hide-contact">
-                    <i class="fas fa-times"></i>
-                    <!-- <span></span>
-                    <span></span> -->
-                </a>
+                <a href="#" id="hide-contact"><i class="fas fa-times"></i></a>
                 <h5 class="contact-title">Our Contacts</h5>
             </div>
             
@@ -235,7 +232,7 @@
                 <li><a class="icon" href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a class="icon" href="#"><i class="fab fa-instagram-square"></i></a></li>
                 <li><a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-              </ul>
+            </ul>
         </div>
         <!-- our contacts model -->
 
@@ -243,11 +240,11 @@
 
 
         <!------------------------ Start Slider Section --------------------------->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide headerSlider" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slide-1.jpg" class="d-block w-100" alt="slide-1">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <div class="col-12">
                         <h4 class="carousel-title-4">Welcome to Our Online Store</h4>
                         <h1 class="carousel-title-1">GROCERY STORE</h1>
@@ -258,7 +255,7 @@
               </div>
               <div class="carousel-item">
                 <img src="images/slide-2.jpg" class="d-block w-100" alt="slide-2">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <div class="col-12">
                         <h4 class="carousel-title-4">A Wide Selection of Artisan Bread</h4>
                         <h1 class="carousel-title-1">BAKED GOODS</h1>
@@ -269,7 +266,7 @@
               </div>
               <div class="carousel-item">
                 <img src="images/slide-3.jpg" class="d-block w-100" alt="slide-3">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <div class="col-12">
                         <h4 class="carousel-title-4">Fresh and Tasty</h4>
                         <h1 class="carousel-title-1">vegetables</h1>
@@ -279,10 +276,15 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <ol class="carousel-indicators d-flex d-sm-none">
+                <li class="indicate active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li class="indicate" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li class="indicate" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-prev d-none d-xl-flex" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span class="carousel-prev-icon" aria-hidden="true">Prev</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <a class="carousel-control-next d-none d-xl-flex" href="#carouselExampleCaptions" role="button" data-slide="next">
               <span class="carousel-next-icon" aria-hidden="true">Next</span>
             </a>
         </div>
@@ -358,8 +360,8 @@
         <!----------------------  Start new product section   ----------------------->
         <div class="new-products">
             <div class="container">
-                <h4 class="prooduct-title-1">Latest Arrivals</h4>
-                <h2 class="prooduct-title-2">NEW PRODUCTS</h2>
+                <h4 class="product-title-1" id="title-pro-1">Latest Arrivals</h4>
+                <h2 class="product-title-2" id="title-pro-2">NEW PRODUCTS</h2>
                 <div class="products">
                     <div class="products-filter">
                         <ul class="products-filters-list">
@@ -369,7 +371,7 @@
                             <li><a href="#" data-filter="Type 3">Bread</a></li>
                         </ul>
                     </div>
-                    <div class="row products-card">
+                    <div class="row products-card" id="products-card">
                         <div class="product-content">
                             <div class="product-body">
                                 <div class="product-img">
@@ -503,8 +505,284 @@
         </div>
         <!----------------------  End new product section   ----------------------->
 
+
+        <!------------------------  Start testemonials section  ------------------------>
+        <div class="testemonials">
+            <div class="testemonials-titles">
+                <h4 class="title-1" id="title-test-1">Latest Testimonials</h4>
+                <h2 class="title-2" id="title-test-2">Our clients</h2>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content-qoutes w-100">
+                            <div class="qoute-icon"></div>
+                            <div class="q">I just received my order and was truly amazed. It was packed so well and the items are wonderful. I am new to ordering food online but it was a great experience.</div>
+                            <div class="unit">
+                                <div class="unit-left">
+                                    <div class="quote-modern-figure"><img src="images/Bill.png" alt="Bill">
+                                </div>
+                                </div>
+                                <div class="unit-body">
+                                    <div class="quote-modern-author">Bill Mcmillan</div>
+                                    <div class="quote-modern-status">Client</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content-qoutes w-100">
+                            <div class="qoute-icon"></div>
+                            <div class="q">I have to say I'm really impressed with my recent order. I've bought similar products from other sites before, but I chose you this time because of your great selection and prices.</div>
+                            <div class="unit">
+                                <div class="unit-left">
+                                    <div class="quote-modern-figure"><img src="images/Kate.png" alt="Kate">
+                                </div>
+                                </div>
+                                <div class="unit-body">
+                                    <div class="quote-modern-author">Kate Smith</div>
+                                    <div class="quote-modern-status">Client</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content-qoutes w-100">
+                            <div class="qoute-icon"></div>
+                            <div class="q">I got my large order of Raw Vegan foods in today via UPS and was very impressed with the packaging &amp; freshness as well as the quality of my meals.</div>
+                            <div class="unit">
+                                <div class="unit-left">
+                                    <div class="quote-modern-figure"><img src="images/Jane.png" alt="Jane">
+                                </div>
+                                </div>
+                                <div class="unit-body">
+                                    <div class="quote-modern-author">Jane Peterson</div>
+                                    <div class="quote-modern-status">Client</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="control-prev-icon" aria-hidden="true">Prev</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="control-next-icon" aria-hidden="true">Next</span>
+                </a>
+            </div>
+        </div>
+        <!------------------------  End testemonials section  ------------------------>
+
+
+        <!-------------------------- Strat Sale section  -------------------------->
+        <div class="sale container">
+            <div class="banner-img-1"></div>
+            <div class="banner-img-2">
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+        <!-------------------------- End Sale section  -------------------------->
+
+
+        <!-------------------------- Start our Partner section  -------------------------->
+        <div class="our-partner">
+            <div class="container">
+                <div class="row">
+                    <div class="partner-img"><img src="images/client1.png" alt="client"></div>
+                    <div class="partner-img"><img src="images/client2.png" alt="client"></div>
+                    <div class="partner-img"><img src="images/client3.png" alt="client"></div>
+                    <div class="partner-img"><img src="images/client4.png" alt="client"></div>
+                    <div class="partner-img"><img src="images/client5.png" alt="client"></div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------- End our Partner section  -------------------------->
+
+
+        <!------------------------ Start Common Questions section ------------------------>
+        <div class="Common-Questions">
+            <div class="container">
+                <div class="row">
+                    <div class="Common-Questions-slider">
+                        <ul class="my-slides">
+                            <input type="radio" name="radio-btn" id="img-1" checked>
+                            <li class="slide-container">
+                                <div class="slide-img">
+                                    <img src="images/common-slider1.png" alt="">
+                                    <h4 class="slides-title"><a href="#">parmesan Cheese</a></h4>
+                                    <div class="slide-prices">
+                                        <div class="slide-price-old">$30.00</div>
+                                        <div class="slide-price-new">$23.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-2">
+                            <li class="slide-container">
+                                <div class="slide-img">
+                                    <img src="images/common-slider2.png">
+                                    <h4 class="slides-title"><a href="#">Whole Grain Bread</a></h4>
+                                    <div class="slide-prices">
+                                        <div class="slide-price-old">$18.00</div>
+                                        <div class="slide-price-new">$13.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-3">
+                            <li class="slide-container">
+                                <div class="slide-img">
+                                    <img src="images/common-slider3.png">
+                                    <h4 class="slides-title"><a href="#">Sparkling juice</a></h4>
+                                    <div class="slide-prices">
+                                        <div class="slide-price-old">$20.00</div>
+                                        <div class="slide-price-new">$15.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-dots">
+                                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Common-Questions-FAQ">
+                        <h4>Common Questions</h4>
+                        <h2>FAQ</h2>
+                        <div class="Questions">
+                            <div class="Question Question1">
+                                <div class="ask">
+                                    <span class="ask-icon"><i class="fas fa-angle-right"></i></span>
+                                    <p>What do I receive when I order a template?</p>
+                                </div>
+                                <div class="answer">
+                                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                                </div>
+                            </div>
+                            <div class="Question Question2">
+                                <div class="ask">
+                                    <span class="ask-icon"><i class="fas fa-angle-right"></i></span>
+                                    <p>In what formats are your templates available?</p>
+                                </div>
+                                <div class="answer">
+                                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                                </div>
+                            </div>
+                            <div class="Question Question3">
+                                <div class="ask">
+                                    <span class="ask-icon"><i class="fas fa-angle-right"></i></span>
+                                    <p>What am I allowed to do with the templates?</p>
+                                </div>
+                                <div class="answer">
+                                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------ End Common Questions section  ------------------------>
+
+
+        <!--------------------------  start map section  ------------------------->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10710488.50732746!2d36.939381932148315!3d25.7803471182848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1627150069202!5m2!1sar!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe><span>ولاد الوسخه</span>
+        </div>
+        <!--------------------------  end map section  ------------------------->
+
+
+        <!----------------------------  Start footer section  ---------------------------->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-12 information">
+                        <div class="logo-brand">
+                            <img src="images/logo-default.png" alt="logo">
+                        </div>
+                        <ul class="list-schedule">
+                            <li><span>Weekdays :</span><span>08:00am - 08:00pm</span></li>
+                            <li><span>Weekends :</span><span>10:00am - 06:00pm</span></li>
+                        </ul>
+                        <div class="footer-social">
+                            <p>Get Social</p>
+                            <ul class="social-list">
+                                <li><a class="icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="icon" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="icon" href="#"><i class="fab fa-instagram-square"></i></a></li>
+                                <li><a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 contacts">
+                        <h4 class="footer-classic-title">Contacts</h4>
+                        <ul class="contacts-creative">
+                            <li>
+                                <div class="contact">
+                                    <div class="contact-left"><span class="icon-marker"><i class="fas fa-map-marker-alt"></i></span></div>
+                                    <div class="contact-body"><a href="#">523 Sylvan Ave, 5th Floor<br>Mountain View, CA 94041 USA</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact">
+                                    <div class="contact-left"><span class="icon-phone"><i class="fas fa-phone-alt"></i></span></div>
+                                    <div class="contact-body"><a href="tel:#">+1 (844) 123 456 78</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact">
+                                    <div class="contact-left"><span class="icon-email"><i class="far fa-envelope"></i></span></div>
+                                    <div class="contact-body"><a href="mailto:#">info@demolink.org</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-12 newsletter">
+                        <h4 class="footer-classic-title">Newsletter</h4>
+                        <p>Subscribe to our newsletter to receive weekly news, updates, special offers, and exclusive discounts.</p>
+                        <form class="form">
+                            <div class="form-contact">
+                                <div class="form-input">
+                                    <label for="inp-form" id="label">Enter your e-mail</label>
+                                    <input type="text" id="inp-form">
+                                </div>
+                                <div class="form-button">
+                                    <span class="form-icon"><i class="fas fa-paper-plane"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- copy rights -->
+        <div class="copy-rights">
+            <div class="container">
+                <div class="row row-10 align-items-center justify-content-sm-between">
+                    <div class="col-md-auto col-auto">
+                        <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2021</span><span>&nbsp;</span><span>Grocmart</span><span>.&nbsp;</span><span>All rights reserved</span></p>
+                    </div>
+                    <div class="col-md-auto order-md-1 Privacy"><a href="#">Privacy Policy</a></div>
+                    <div class="col-md-auto payment-img">
+                        <div class="group-sm group-middle">
+                            <img src="images/payment-1.png" alt="payment" width="45" height="15">
+                            <img src="images/payment-2.png" alt="payment" width="46" height="28">
+                            <img src="images/payment-3.png" alt="payment" width="62" height="17">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------  End footer section  ----------------------------->
+
+
         <!-- to top -->
-        <a href="#" id="to-top" class="to-top">
+        <a href="#" id="to-top" class="to-top" title="to top">
             <i class="fas fa-arrow-up"></i>
         </a>
         <!-- to top -->
