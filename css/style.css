@@ -1225,7 +1225,7 @@ a:hover{text-decoration: none !important;}
 }
 .new-products .product-title-2
 {
-    font-size: 55px;
+    font-size: 42px;
     font-weight: 600;
     margin: 10px 0px 0px;
     animation-name: products-animation-2;
@@ -1504,7 +1504,7 @@ a:hover{text-decoration: none !important;}
 @media (max-width:767px) {
     .new-products .prooduct-title-2
     {
-        font-size: 35px;
+        font-size: 35px !important;
         font-weight: 600;
         margin: 10px 0px 0px;
     }
